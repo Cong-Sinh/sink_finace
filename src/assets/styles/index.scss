@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+.container1 {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.border-1 {
+  border-left: 1px solid white;
+  height: 40px;
+  padding: 0 0 0 17px;
+}

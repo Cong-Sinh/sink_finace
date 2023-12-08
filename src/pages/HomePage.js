@@ -1,10 +1,15 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import Layout from '../layouts/Layout';
+import HomeBanner from '../home/HomeBanner';
+import Intro from '../home/Intro';
 
 const HomePage = () => {
   return (
-    <div>
-      <NavLink to="/Abount">sang abount</NavLink>
+    <div className="mx-24 container1 font-fontRoboto">
+      <Layout>
+        <HomeBanner />
+        <Intro />
+      </Layout>
     </div>
   );
 };

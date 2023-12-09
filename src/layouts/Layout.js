@@ -1,11 +1,15 @@
 import React, { Fragment } from 'react';
 import Header from './Header';
+import Bottom from './Bottom';
 
 const Layout = ({ children }) => {
   return (
     <Fragment>
-      <Header></Header>
-      {children}
+      <div className="flex justify-center text-center">
+        <Header></Header>
+        {children}
+      </div>
+      <Bottom></Bottom>
     </Fragment>
   );
 };

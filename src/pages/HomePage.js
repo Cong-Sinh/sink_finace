@@ -5,12 +5,12 @@ import Intro from '../home/Intro';
 
 const HomePage = () => {
   return (
-    <div className="mx-24 container1 font-fontRoboto">
-      <Layout>
+    <Layout>
+      <div className="mx-24 container1 font-fontRoboto">
         <HomeBanner />
         <Intro />
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
 };
 

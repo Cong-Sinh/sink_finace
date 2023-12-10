@@ -7,7 +7,6 @@ module.exports = {
         text: '#1D1C31',
         primary: '#0045DC',
         primary1: '#4253ED',
-
         secondary1: '#00AEED',
         secondary2: '#2D47F6',
         yellow: '#E8E6A6',
@@ -29,6 +28,14 @@ module.exports = {
       fontFamily: {
         fontRoboto: ["'Roboto', sans-serif"],
         fontMontserrat: ["'Montserrat', sans-serif"],
+      },
+      screens: {
+        tablet: '640px',
+        // => @media (min-width: 640px) { ... }
+
+        laptop: '1024px',
+
+        desktop: '1440px',
       },
     },
   },

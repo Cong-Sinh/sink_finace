@@ -1,5 +1,4 @@
-import Header from '../layouts/Header';
-import React, { Fragment } from 'react';
+import React from 'react';
 import Abount1 from '../assets/images/Abount1.png';
 import Abount2 from '../assets/images/Abount2.png';
 import iconRight_fullColor from '../assets/images/iconRight_fullcolor.png';
@@ -10,20 +9,21 @@ import icon_eye from '../assets/images/icon_eye.png';
 import shotTarget from '../assets/images/icon_shot_target.png';
 import Abount4 from '../assets/images/Abount4.png';
 import AdvertiseApp from './AdvertiseApp';
-import Bottom from '../layouts/Bottom';
+import Layout from '../layouts/Layout';
 
 const Abount = () => {
   return (
-    <Fragment>
-      <div className="max-w-[1440px] mx-auto">
+    <Layout>
+      <div className="mx-auto max-w-screen-desktop">
         <div className="flex justify-center ">
-          <Header />
-          <img src={Abount1} alt="" />
-          {/* <div className="absolute z-10"></div> */}
-          <div className="absolute inset-0 rounded-lg opacity-80 max-w-[1440px] max-h-[750px] mx-auto flex overlay bg-gradient-to-r from-secondary2 to-secondary1"></div>
-          <div className="absolute bottom-[40%] text-[54px] font-bold font-fontMontserrat leading-[66px] text-white text-center">
-            <div>Thẩm định tự động </div>
-            <div>Thu xếp tài chính thần tốc </div>
+          <div className="relative">
+            <img src={Abount1} alt="" />
+            <div className="absolute inset-0 flex mx-auto opacity-80 overlay bg-gradient-to-r from-secondary2 to-secondary1">
+              <div className="bottom-[40%] absolute w-full text-[54px] font-bold font-fontMontserrat leading-[66px] text-white  text-center">
+                <div>Thẩm định tự động </div>
+                <div>Thu xếp tài chính thần tốc </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -117,8 +117,7 @@ const Abount = () => {
 
         <AdvertiseApp />
       </div>
-      <Bottom />
-    </Fragment>
+    </Layout>
   );
 };
 

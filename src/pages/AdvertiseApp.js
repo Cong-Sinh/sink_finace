@@ -6,10 +6,9 @@ import mockup from '../assets/images/3Dmockup.png';
 const AdvertiseApp = () => {
   return (
     <div>
-      <div className="mx-[95px]  mb-[64px] rounded-lg" style={{ backgroundColor: 'lightblue' }}>
-        <div className="flex justify-center "></div>
-        <div className="grid grid-cols-12 ">
-          <div className="col-span-8 mt-[74px] mb-[44px] ml-[34px] text-left ">
+      <div className="mx-[95px] relative overflow-hidden mb-[64px] rounded-lg" style={{ backgroundColor: 'lightblue' }}>
+        <div className="flex overflow-hidden ">
+          <div className=" mt-[84px] mb-[68px] ml-[104px] text-left ">
             <h3 className="font-fontMontserrat font-bold text-heading1 leading-[58px] text-text">
               Tải App Meey Finance
             </h3>
@@ -22,8 +21,8 @@ const AdvertiseApp = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-4 ">
-            <img src={mockup} alt="" />
+          <div className="">
+            <img src={mockup} alt="" className="absolute ml-[73px]" />
           </div>
         </div>
       </div>

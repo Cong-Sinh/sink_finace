@@ -30,10 +30,12 @@ module.exports = {
         fontMontserrat: ["'Montserrat', sans-serif"],
       },
       screens: {
-        tablet: '640px',
+        sm: '640px',
         // => @media (min-width: 640px) { ... }
 
-        laptop: '1024px',
+        md: '768px',
+
+        lg: '1024px',
 
         desktop: '1440px',
       },

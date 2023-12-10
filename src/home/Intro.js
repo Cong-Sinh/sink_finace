@@ -12,6 +12,7 @@ import backgroundIntro4 from '../assets/images/backgroundIntro4.png';
 import backgroundIntro5 from '../assets/images/backgroundIntro5.png';
 import backgroundIntro51 from '../assets/images/backgroundIntro5-1.png';
 import backgroundIntro6 from '../assets/images/backgroundIntro6.png';
+import Mobie_backgroundIntro2 from '../assets/images/Mobie_backgroundIntro2.png';
 import client from '../assets/images/client.png';
 import iconRight from '../assets/images/SignUp Button/Arrow 1.png';
 import Button from '../components/button/button';
@@ -443,41 +444,42 @@ const IntroSwipper = styled.div`
 const Intro = () => {
   return (
     <Fragment>
-      <div className="py-16 mx-24">
+      <div className="py-16 max-[740px]:pt-9 max-[740px]:pb-[56px] mx-24 max-[740px]:mx-0">
         <div className="flex justify-center w-full ">
-          <h2 className=" mb-14 w-[600px] h-[104px] leading-[52px] text-center font-bold  font-fontMontserrat text-text text-heading1 z-10">
+          <h2 className=" mb-14 w-[600px]  leading-[52px] text-center font-bold  font-fontMontserrat text-text text-heading1 z-10 max-[740px]:w-full max-[740px]:leading-7 max-[740px]:text-heading3 max-[740px]:mb-7 max-[740px]:mx-[73px]">
             Vì sao bạn nên chọn Meey Finance?
           </h2>
           <img src={backgroundIntro1} alt="" className="absolute flex justify-center " />
         </div>
 
-        <div className="relative flex ">
-          <img src={introLogo1} alt="" />
+        <div className="relative flex max-[740px]:flex-col ">
+          <img src={introLogo1} alt="" className="max-[740px]:hidden" />
           <div>
-            <div className="mb-6 font-normal leading-7 text-black text-heading3 opacity-80 ">
+            <div className="mb-6 font-normal leading-7 text-black text-heading3 opacity-80 max-[740px]:text-base  max-[740px]:leading-5  max-[740px]:mx-6">
               Meey Finance là đơn vị tiên phong ứng dụng công nghệ AI vào các hoạt động giao dịch bất động sản
             </div>
-            <div className="px-7">
+            <div className="px-7  max-[740px]:px-6">
               {introDesc.map((item) => (
                 <div key={item.title} className="flex py-4 ">
-                  {item.icon}
+                  <div className="max-[740px]:w-6 max-[740px]:h-8 max-[740px]:mt-2"> {item.icon}</div>
 
-                  <div className="mx-4 text-text">
-                    <h3 className="font-semibold leading-8 text-heading3">{item.title}</h3>
-                    <p className="font-normal leading-5 text-heading5 ">{item.desc}</p>
+                  <div className="mx-4 text-text max-[740px]:text-left max-[740px]:pl-4 ">
+                    <h3 className="font-semibold leading-8 text-heading3 max-[740px]:text-heading5  ">{item.title}</h3>
+                    <p className="font-normal leading-5 text-heading5 max-[740px]:text-sm  ">{item.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
+          <img src={introLogo1} alt="" className="min-[739px]:hidden max-[740px]:mt-7" />
         </div>
       </div>
 
-      <div style={{ backgroundColor: '#EAF3FF' }}>
-        <div className="flex pl-4 ">
-          <img src={backgroundIntro2} alt="" />
-          <div className="py-[123px] w-[603px] text-left">
-            <h3 className=" font-bold font-fontMontserrat leading-[58px] text-darkblue text-heading1  ">
+      {/* <div style={{ backgroundColor: '#EAF3FF' }}>
+        <div className="flex pl-4 max-[740px]:flex-col ">
+          <img src={backgroundIntro2} alt="" className="max-[740px]:hidden" />
+          <div className="py-[123px] max-[760px]:pt-[48px] max-[760px]:pb-0 w-[603px] text-left">
+            <h3 className=" font-bold font-fontMontserrat leading-[58px] text-darkblue text-heading1 max-[740px]:text-heading3 max-[740px]:leading-7  ">
               Thẩm định bất động sản toàn diện
             </h3>
             <div className="my-6 font-normal leading-7 text-black text-heading3 opacity-80">
@@ -498,11 +500,12 @@ const Intro = () => {
                 </div>
               </Button>
             </div>
+            <img src={Mobie_backgroundIntro2} alt="" className="min-[739px]:hidden" />
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="pt-[142px]">
+      {/* <div className="pt-[142px]">
         <div className="flex justify-center">
           <div className=" pb-[60px] w-[578px]">
             <h3 className="mb-6  text-left  font-bold font-fontMontserrat leading-[58px] text-darkblue text-heading1">
@@ -599,8 +602,8 @@ const Intro = () => {
           </div>
           <img src={backgroundIntro51} alt="" className="mt-10 " />
         </div>
-      </div>
-      <IntroSwipper>
+      </div> */}
+      {/* <IntroSwipper>
         <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
           <SwiperSlide>
             <div className="flex justify-center my-[64px]">
@@ -613,7 +616,7 @@ const Intro = () => {
             </div>
           </SwiperSlide>
         </Swiper>
-      </IntroSwipper>
+      </IntroSwipper> */}
     </Fragment>
   );
 };

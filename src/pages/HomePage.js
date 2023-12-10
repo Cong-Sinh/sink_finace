@@ -7,10 +7,10 @@ import AdvertiseApp from '../pages/AdvertiseApp';
 const HomePage = () => {
   return (
     <Layout>
-      <div className="mx-24 max-w-screen-desktop font-fontRoboto">
+      <div className="mx-24 max-[740px]:mx-0 max-w-screen-desktop font-fontRoboto">
         <HomeBanner />
         <Intro />
-        <AdvertiseApp />
+        {/* <AdvertiseApp /> */}
       </div>
     </Layout>
   );

@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         <Header></Header>
         {children}
       </div>
-      <Bottom></Bottom>
+      {/* <Bottom></Bottom> */}
     </Fragment>
   );
 };

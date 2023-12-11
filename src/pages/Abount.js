@@ -83,13 +83,17 @@ const Abount = () => {
           <img src="/Mobi_backgoundAbount2_1.png" alt="" className="absolute  bottom-[2%]" />
         </div>
 
-        <div className="pt-[72px] pb-[134px] justify-center text-left bg-gradient-to-r from-secondary1 to-lightblue">
-          <h2 className="text-heading1 font-bold leading-[52px] text-center mb-[95px] text-text ">
+        <div className="pt-[72px] pb-[134px] justify-center text-left bg-gradient-to-r from-secondary1 to-lightblue max-[740px]:pb-[69px] max-[740px]:pt-9 ">
+          <h2 className="text-heading1 font-bold leading-[52px] text-center mb-[95px] text-text max-[740px]:mb-6 max-[740px]:text-heading3 max-[740px]:leading-7 font-fontMontserrat">
             Tầm nhìn - Sứ mệnh
           </h2>
           <div className="flex mx-[98px]  max-[740px]:block max-[740px]:mx-6">
-            <div className="mr-3 bg-white pt-[60px] pb-[100px] pl-10 pr-[64px] rounded-lg max-[740px]:px-6 max-[740px]:mr-0 max-[740px]:pt-5 max-[740px]:pb-5 max-[740px]:mb-5">
-              <img src="Icon_eye.png" alt="" className="mt-10 mb-7 max-[740px]:mb-4 max-[740px]:mt-0" />
+            <div className="mr-3 bg-white pt-[60px] pb-[100px] pl-10 pr-[64px] rounded-lg max-[740px]:px-6 max-[740px]:mr-0 max-[740px]:pt-5 max-[740px]:pb-5 max-[740px]:mb-5 ">
+              <img
+                src="Icon_eye.png"
+                alt=""
+                className="mt-10 mb-7 max-[740px]:mb-4 max-[740px]:mt-0 max-[740px]:ml-[10px]"
+              />
               <div className="mb-[10px] text-text text-heading2 font-bold leading-9">Tầm nhìn</div>
               <div className="font-normal leading-5 text-heading5">
                 Trở thành ngân hàng số đầu tiên trên thế giới chuyên biệt trong lĩnh vực bất động sản nhằm phục vụ cho
@@ -97,8 +101,12 @@ const Abount = () => {
                 vốn hóa hàng trăm tỷ đô.
               </div>
             </div>
-            <div className="mr-3 bg-white pt-[60px] pb-[100px] pl-10 pr-[64px] rounded-lg max-[740px]:px-6 max-[740px]:mr-0 max-[740px]:pt-5 max-[740px]:pb-5 max-[740px]:mb-5">
-              <img src="Icon_shot_target.png" alt="" className="mt-10 mb-7 max-[740px]:mb-4 max-[740px]:mt-0" />
+            <div className="mr-3 bg-white pt-[60px] pb-[100px] pl-10 pr-[64px] rounded-lg max-[740px]:px-6 max-[740px]:mr-0 max-[740px]:pt-5 max-[740px]:pb-5 ">
+              <img
+                src="Icon_shot_target.png"
+                alt=""
+                className="mt-10 mb-7 max-[740px]:mb-4 max-[740px]:mt-0  max-[740px]:ml-[10px]"
+              />
               <div className="mb-[10px] text-text text-heading2 font-bold leading-9">Sứ mệnh</div>
               <div className="font-normal leading-5 text-heading5">
                 Tiên phong đem đến cho khách hàng các giải pháp thanh toán, cho vay và kết nối đầu tư trong lĩnh vực bất

@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import React, { Fragment, useState } from 'react';
+import React, { Fragment } from 'react';
 import Button from '../components/button/button';
+import useToggleValue from '../hooks/useToggleValue';
 const menuLinks = [
   {
     url: '/gioi-thieu',
@@ -25,8 +26,8 @@ const menuLinks = [
 ];
 
 const Header = () => {
-  const [showModal, setShowModal] = useState(false);
-  const [showModalMobile, setShowModalMobile] = useState(false);
+  const { value: showModal, handleToggleValue: setShowModal } = useToggleValue();
+  const { value: showModalMobile, handleToggleValue: setShowModalMobile } = useToggleValue();
 
   return (
     <Fragment>
@@ -65,6 +66,49 @@ const Header = () => {
           onClick={() => setShowModalMobile(!showModalMobile)}
         />
       </div>
+
+      {showModalMobile && (
+        <div className="fixed inset-0 top-auto bottom-auto z-20 w-full font-fontMontserrat bg-opacity-20 ">
+          <div className=" h-[100vh] px-10 bg-white transition duration-700 ease-in-out">
+            <div className="relative pt-16 text-center pb-9">
+              <img
+                src="/Icon_close.png"
+                alt=""
+                className="absolute z-30 cursor-pointer left-[-20px] top-6"
+                onClick={() => setShowModalMobile(!showModalMobile)}
+              />
+              <div className="font-bold text-center text-heading3">Danh mục sản phẩm</div>
+            </div>
+            <div className="border-b-[1px] "></div>
+
+            <div className="pt-8 ">
+              <NavLink className="flex text-left pb-11">
+                <img src="/Icon_MobieSidebar1.png" alt="" className="mr-2" />
+                <div>Giới thiệu</div>
+              </NavLink>
+              <NavLink className="flex text-left pb-11">
+                <img src="/Icon_MobieSidebar2.png" alt="" className="mr-2" />
+                <div>Sản phẩm</div>
+              </NavLink>
+              <NavLink className="flex text-left pb-11">
+                <img src="/Icon_MobieSidebar3.png" alt="" className="mr-2" />
+                <div>Tuyển dụng</div>
+              </NavLink>
+              <NavLink className="flex text-left pb-11">
+                <img src="/Icon_MobieSidebar4.png" alt="" className="mr-2" />
+                <div>Tin tức</div>
+              </NavLink>
+              <NavLink className="flex text-left pb-11">
+                <img src="/Icon_MobieSidebar5.png" alt="" className="mr-2" />
+                <div>Hỗ trợ</div>
+              </NavLink>
+            </div>
+            <Button to="/" className="w-full h-12 ml-0" bgColor="header">
+              Tải app ngay
+            </Button>
+          </div>
+        </div>
+      )}
 
       {showModal && (
         <div className="absolute inset-0 z-10 pt-20 font-fontRoboto bg-opacity-20 ">

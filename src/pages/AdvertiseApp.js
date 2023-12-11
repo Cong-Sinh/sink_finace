@@ -1,28 +1,30 @@
 import React from 'react';
-import qrcode from '../assets/images/qrcode.png';
-import chplay from '../assets/images/chplay.png';
-import apple from '../assets/images/apple.png';
-import mockup from '../assets/images/3Dmockup.png';
 const AdvertiseApp = () => {
   return (
     <div>
-      <div className="mx-[95px] relative overflow-hidden mb-[64px] rounded-lg" style={{ backgroundColor: 'lightblue' }}>
+      <div
+        className="mx-[95px] relative overflow-hidden mb-[64px] rounded-lg max-[740px]:mx-6 max-[740px]:mb-6"
+        style={{ backgroundColor: 'lightblue' }}
+      >
         <div className="flex overflow-hidden ">
-          <div className=" mt-[84px] mb-[68px] ml-[104px] text-left ">
-            <h3 className="font-fontMontserrat font-bold text-heading1 leading-[58px] text-text">
+          <div className=" mt-[84px] mb-[68px] ml-[104px] text-left max-[740px]:mt-[47px] max-[740px]:mx-6">
+            <h3 className="font-fontMontserrat font-bold text-heading1 leading-[58px] text-text max-[740px]:text-heading2 max-[740px]:leading-10 text-center ">
               Tải App Meey Finance
             </h3>
-            <div className="mt-4 font-normal leading-7 h-14 text-text">Tìm kiếm cơ hội đầu tư cùng Meey Finance</div>
-            <div className="flex items-center gap-7">
-              <img src={qrcode} className="z-10" alt="" />
+            <div className="mt-4 font-normal leading-7 h-14 text-text max-[740px]:text-base">
+              Tìm kiếm cơ hội đầu tư cùng Meey Finance
+            </div>
+            <div className="flex items-center max-[739px]:mb-[250px] gap-7">
+              <img src="/qrcode.png" className="z-10" alt="" />
               <div className="flex flex-col gap-7">
-                <img src={apple} alt="" />
-                <img src={chplay} alt="" />
+                <img src="/Apple.png" alt="" />
+                <img src="/Chplay.png" alt="" />
+              </div>
+              <img src="/Mobi_3Dmockup.png" alt="" className="absolute bottom-0 min-[739px]:hidden" />
+              <div className="max-[739px]:hidden">
+                <img src="/Mobi_3Dmockup.png" alt="" className="absolute bottom-0 right-[10%] " />
               </div>
             </div>
-          </div>
-          <div className="">
-            <img src={mockup} alt="" className="absolute ml-[73px]" />
           </div>
         </div>
       </div>

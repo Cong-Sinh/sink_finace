@@ -10,7 +10,7 @@ const HomePage = () => {
       <div className="mx-24 max-[740px]:mx-0 max-w-screen-desktop font-fontRoboto">
         <HomeBanner />
         <Intro />
-        {/* <AdvertiseApp /> */}
+        <AdvertiseApp />
       </div>
     </Layout>
   );

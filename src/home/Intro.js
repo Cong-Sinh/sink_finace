@@ -4,17 +4,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
-import introLogo1 from '../assets/images/introLogo1.png';
-import backgroundIntro1 from '../assets/images/backgroundIntro1.png';
-import backgroundIntro2 from '../assets/images/backgroundIntro2.png';
-import backgroundIntro3 from '../assets/images/backgroundIntro3.png';
-import backgroundIntro4 from '../assets/images/backgroundIntro4.png';
-import backgroundIntro5 from '../assets/images/backgroundIntro5.png';
-import backgroundIntro51 from '../assets/images/backgroundIntro5-1.png';
-import backgroundIntro6 from '../assets/images/backgroundIntro6.png';
-import Mobie_backgroundIntro2 from '../assets/images/Mobie_backgroundIntro2.png';
-import client from '../assets/images/client.png';
-import iconRight from '../assets/images/SignUp Button/Arrow 1.png';
 import Button from '../components/button/button';
 
 const introDesc = [
@@ -449,11 +438,11 @@ const Intro = () => {
           <h2 className=" mb-14 w-[600px]  leading-[52px] text-center font-bold  font-fontMontserrat text-text text-heading1 z-10 max-[740px]:w-full max-[740px]:leading-7 max-[740px]:text-heading3 max-[740px]:mb-7 max-[740px]:mx-[73px]">
             Vì sao bạn nên chọn Meey Finance?
           </h2>
-          <img src={backgroundIntro1} alt="" className="absolute flex justify-center " />
+          <img src="/backgroundIntro1.png" alt="" className="absolute flex justify-center " />
         </div>
 
         <div className="relative flex max-[740px]:flex-col ">
-          <img src={introLogo1} alt="" className="max-[740px]:hidden" />
+          <img src="/backgroundIntro.png" alt="" className="max-[740px]:hidden" />
           <div>
             <div className="mb-6 font-normal leading-7 text-black text-heading3 opacity-80 max-[740px]:text-base  max-[740px]:leading-5  max-[740px]:mx-6">
               Meey Finance là đơn vị tiên phong ứng dụng công nghệ AI vào các hoạt động giao dịch bất động sản
@@ -471,152 +460,163 @@ const Intro = () => {
               ))}
             </div>
           </div>
-          <img src={introLogo1} alt="" className="min-[739px]:hidden max-[740px]:mt-7" />
+          <img src="/backgroundIntro.png" alt="" className="min-[739px]:hidden max-[740px]:mt-7" />
         </div>
       </div>
 
-      {/* <div style={{ backgroundColor: '#EAF3FF' }}>
-        <div className="flex pl-4 max-[740px]:flex-col ">
-          <img src={backgroundIntro2} alt="" className="max-[740px]:hidden" />
-          <div className="py-[123px] max-[760px]:pt-[48px] max-[760px]:pb-0 w-[603px] text-left">
+      <div style={{ backgroundColor: '#EAF3FF' }}>
+        <div className="flex pl-4 max-[740px]:pl-0 max-[740px]:flex-col ">
+          <img src="/backgroundIntro2.png" alt="" className="max-[740px]:hidden" />
+          <div className="py-[123px] w-[603px] text-left max-[740px]:pt-[48px] max-[740px]:pb-0 max-[740px]:w-full max-[740px]:text-center max-[760px]:px-6">
             <h3 className=" font-bold font-fontMontserrat leading-[58px] text-darkblue text-heading1 max-[740px]:text-heading3 max-[740px]:leading-7  ">
               Thẩm định bất động sản toàn diện
             </h3>
-            <div className="my-6 font-normal leading-7 text-black text-heading3 opacity-80">
+            <div className="my-6 font-normal leading-7 text-black text-heading3 opacity-80 max-[740px]:leading-5 max-[740px]:text-heading5 max-[740px]:text-left ">
               Báo cáo thẩm định bất động sản chuyên sâu All-in-one với sự kết hợp đa công nghệ
             </div>
             <div className="my-6 ">
               {introDesc1.map((item) => (
-                <div key={item.title} className="flex mb-6 ">
+                <div key={item.title} className="flex mb-6 max-[740px]:text-left ">
                   {item.icon}
-                  <div className="mx-4 text-text">
-                    <h3 className="font-semibold leading-8 text-heading3 text-darkblue">{item.title}</h3>
+                  <div className="mx-4 max-[740px]:ml-[10px]  text-text">
+                    <h3 className="font-semibold leading-8 text-heading3 max-[740px]:text-heading5  text-darkblue">
+                      {item.title}
+                    </h3>
                   </div>
                 </div>
               ))}
-              <Button to="/" className="mt-3" bgColor="secondary">
+              <Button to="/" className="mt-3 max-[740px]:left-[50%] max-[740px]:translate-x-[-50%]" bgColor="secondary">
                 <div className="flex">
-                  xem thêm <img src={iconRight} alt="" className="object-contain ml-[10px]" />
+                  xem thêm <img src="/iconRight.png" alt="" className="object-contain ml-[10px]" />
                 </div>
               </Button>
             </div>
-            <img src={Mobie_backgroundIntro2} alt="" className="min-[739px]:hidden" />
+            <img src="/Mobie_backgroundIntro2.png" alt="" className="mt-[121px] min-[739px]:hidden" />
           </div>
         </div>
-      </div> */}
+      </div>
 
-      {/* <div className="pt-[142px]">
-        <div className="flex justify-center">
-          <div className=" pb-[60px] w-[578px]">
-            <h3 className="mb-6  text-left  font-bold font-fontMontserrat leading-[58px] text-darkblue text-heading1">
+      <div className="pt-[142px] max-[740px]:pt-16">
+        <div className="flex justify-center max-[740px]:px-6 max-[740px]:mb-[70px] max-[740px]:block">
+          <div className=" pb-[60px] w-[578px] max-[740px]:w-full">
+            <h3 className="mb-6  text-left  font-bold font-fontMontserrat leading-[58px] text-darkblue text-heading1 max-[740px]:leading-7 max-[740px]:text-heading3 max-[740px]:text-center ">
               Tư vấn & khuyến nghị giao dịch bất động sản
             </h3>
-            <div className="font-normal leading-7 text-left mb-[60px] text-black text-heading3 opacity-80">
+            <div className="font-normal leading-7 text-left mb-[60px] text-black text-heading3 opacity-80 max-[740px]:leading-5 max-[740px]:text-Base max-[740px]:mb-9 ">
               Tư vấn, khuyến nghị các bất động sản có tiềm năng tăng giá tốt và đem lại dòng tiền bền vững từ phân tích
               dữ liệu lớn và kinh nghiệm đầu tư tài chính chuyên nghiệp.
             </div>
 
-            <Button to="/" bgColor="secondary">
+            <Button to="/" bgColor="secondary" className="max-[740px]:left-[50%] max-[740px]:translate-x-[-50%] ">
               <div className="flex">
-                xem thêm <img src={iconRight} alt="" className="object-contain ml-[10px]" />
+                xem thêm <img src="/iconRight.png" alt="" className="object-contain ml-[10px]" />
               </div>
             </Button>
           </div>
           <div>
-            <img src={backgroundIntro3} alt="" className="relative pl-4 " />
+            <img src="/backgroundIntro3.png" alt="" className=" pl-4 max-[740px]:mt-12" />
           </div>
         </div>
       </div>
-
       <div className="flex" style={{ backgroundColor: 'lightblue' }}>
-        <div className="flex mx-auto ">
-          <div>
-            <img src={backgroundIntro4} alt="" className="relative  pt-[51px] " />
-          </div>
-          <div className="pt-[148px] pl-5 pb-[189px] text-left w-[603px]">
-            <h3 className="mb-6 font-bold font-fontMontserrat leading-[58px] text-text text-heading1  ">
+        <div className="flex mx-auto max-[740px]:mx-6 max-[740px]:block ">
+          <img src="/backgroundIntro4.png" alt="" className="relative pt-[51px] max-[740px]:hidden " />
+          <div className="pt-[148px] pl-5 pb-[189px] text-left  w-[603px] max-[740px]:pt-12 max-[740px]:pl-0 max-[740px]:pb-0  max-[740px]:w-full ">
+            <h3 className="mb-6 font-bold font-fontMontserrat leading-[58px] text-text text-heading1 max-[740px]:text-heading3 max-[740px]:leading-7 max-[740px]:text-center">
               Đầu tư tài chính bất động sản
             </h3>
-            <div className="font-normal w-[578px] mb-[60px] leading-7 text-black text-heading3 opacity-80">
+            <div className="font-normal w-[578px] mb-[60px] leading-7 text-black text-heading3 opacity-80 max-[740px]:text-heading5 max-[740px]:mb-5 max-[740px]:w-full max-[740px]:text-left">
               Các sản phẩm đầu tư tài chính an toàn, minh bạch và uy tín với lợi nhuận hấp dẫn được đảm bảo bằng bất
               động sản.
             </div>
-            <Button to="/" bgColor="secondary">
+            <Button to="/" bgColor="secondary" className="max-[740px]:left-[50%] max-[740px]:translate-x-[-50%]">
               <div className="flex">
-                xem thêm <img src={iconRight} alt="" className="object-contain ml-[10px]" />
+                xem thêm <img src="/iconRight.png" alt="" className="object-contain ml-[10px]" />
               </div>
             </Button>
+            <img src="/Mobi_backgroundIntro1.png" alt="" className="relative  min-[739px]:hidden " />
           </div>
         </div>
       </div>
 
-      <div className="pt-[140px]">
-        <div className="flex justify-center">
-          <div className="pt-[84px] text-left mr-[67px] pb-[114px] w-[565px]">
-            <h3 className="font-bold font-fontMontserrat leading-[58px] text-text text-heading1  ">
+      <div className="pt-[140px] max-[739px]:pt-0 ">
+        <div className="flex justify-center max-[739px]:block">
+          <div className="pt-[84px] text-left mr-[67px] pb-[114px] w-[565px] max-[739px]:w-full max-[739px]:px-6 max-[739px]:pt-16 max-[739px]:pb-0">
+            <h3 className="font-bold font-fontMontserrat leading-[58px] text-text text-heading1  max-[739px]:text-heading3 max-[739px]:leading-7 max-[739px]:text-center">
               Kết nối giao dịch
             </h3>
-            <div className="mt-10 mb-[60px] font-normal leading-7 text-black text-heading3 opacity-80">
+            <div className="mt-10 mb-[60px] font-normal leading-7 text-black text-heading3 opacity-80 max-[739px]:text-base max-[739px]:w-full max-[739px]:my-6 ">
               Kết nối trực tiếp với nhà đầu tư và khách hàng, đem lại cơ hội cơ hội đầu tư bất động sản an toàn, hấp
               dẫn, thanh khoản cao được đảm bảo bởi Meey Finance.
             </div>
-            <Button to="/" bgColor="secondary">
+            <Button to="/" bgColor="secondary" className="max-[739px]:left-[50%] max-[739px]:translate-x-[-50%]">
               <div className="flex">
-                xem thêm <img src={iconRight} alt="" className="object-contain ml-[10px]" />
+                xem thêm <img src="/iconRight.png" alt="" className="object-contain ml-[10px]" />
               </div>
             </Button>
           </div>
           <div>
-            <img src={backgroundIntro5} alt="" />
+            <img src="/backgroundIntro5.png" alt="" className="max-[740px]:hidden " />
+          </div>
+          <div>
+            <img
+              src="/backgroundIntro5.png"
+              alt=""
+              className="min-[739px]:hidden  text-center max-[739px]:pt-20  max-[739px]:ml-[-5%]"
+            />
           </div>
         </div>
       </div>
 
-      <div className="relative flex justify-center text-center ">
-        <img src={client} alt="" className="rounded-lg" />
-        <div className="absolute left-[149px]">
-          <h3 className=" mt-[71px] font-fontMontserrat font-bold text-heading1 leading-[58px] text-white">
+      <div className="relative flex justify-center text-center max-[739px]:mx-6 max-[740px]:mb-6 ">
+        <img src="/client.png" alt="" className="rounded-lg max-[739px]:hidden" />
+        <img src="/mobi_client.png" alt="" className="rounded-lg min-[740px]:hidden" />
+        <div className="absolute min-[739px]:left-[149px] ">
+          <h3 className=" mt-[71px] font-fontMontserrat font-bold text-heading1 leading-[58px] text-white max-[739px]:text-heading3 max-[739px]:leading-6">
             Khách hàng & Đối tác
           </h3>
           <div className="flex text-white ">
-            <div className="flex grid-cols-3 text-left mt-7 ">
-              <div className="col-span-1">
-                <div className="font-bold leading-9 text-heading2">100.000</div>
-                <div className="w-[200px] font-normal text-heading5 leading-5 text-white opacity-80">
+            <div className="flex grid-cols-3 text-left mt-7  max-[739px]:flex-col">
+              <div className="col-span-1 max-[739px]:pb-8">
+                <div className="font-bold leading-9 text-heading2  max-[739px]:text-heading3 ">100.000</div>
+                <div className="w-[200px] font-normal text-heading5 leading-5 text-white opacity-80 max-[739px]:text-Base max-[739px]:leading-5">
                   Số lượng khách hàng
                 </div>
               </div>
-              <div className="col-span-1 border-l-[1px] h-[50%] pl-4 ">
-                <div className="font-bold leading-9 text-heading2">1.000</div>
+              <div className="col-span-1 border-l-[1px] h-[50%] pl-4 max-[739px]:pl-0 max-[739px]:border-l-0  max-[739px]:pb-8 ">
+                <div className="font-bold leading-9 text-heading2  max-[739px]:text-heading3 ">1.000</div>
                 <div className="w-[200px] font-normal text-heading5 leading-5 text-white opacity-80">
                   Số lượng giao dịch bình quân/tháng
                 </div>
               </div>
-              <div className="col-span-1 border-l-[1px] h-[50%] pl-4">
-                <div className="font-bold leading-9 text-heading2">3.000 tỷ</div>
+              <div className="col-span-1 border-l-[1px] h-[50%] pl-4 max-[739px]:pl-0 max-[739px]:border-l-0  max-[739px]:pb-8">
+                <div className="font-bold leading-9 text-heading2  max-[739px]:text-heading3 ">3.000 tỷ</div>
                 <div className="w-[200px] font-normal text-heading5 leading-5 text-white opacity-80">
                   Giá trị giao dịch lũy kế
                 </div>
               </div>
             </div>
+            <img src="/Mobi_client1_1.png" alt="" className=" bottom-[-70%]  absolute min-[739px]:hidden " />
           </div>
-          <img src={backgroundIntro51} alt="" className="mt-10 " />
+          <img src="/backgroundIntro5.png_1" alt="" className="mt-10 max-[739px]:hidden " />
         </div>
-      </div> */}
-      {/* <IntroSwipper>
-        <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-          <SwiperSlide>
-            <div className="flex justify-center my-[64px]">
-              <img src={backgroundIntro6} alt="" />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="flex justify-center my-[64px]">
-              <img src={backgroundIntro6} alt="" />
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </IntroSwipper> */}
+      </div>
+      <div className="max-[740px]:hidden">
+        <IntroSwipper>
+          <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+            <SwiperSlide>
+              <div className="flex justify-center my-[64px]">
+                <img src="/backgroundIntro6.png" alt="" />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="flex justify-center my-[64px]">
+                <img src="/backgroundIntro6.png" alt="" />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </IntroSwipper>
+      </div>
     </Fragment>
   );
 };

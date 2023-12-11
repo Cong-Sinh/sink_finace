@@ -1,10 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import banner2 from '../assets/images/banner2.png';
-import banner3 from '../assets/images/banner3.png';
-import mobi_homebanner1 from '../assets/images/mobi_homebanner1.png';
-import iconRight from '../assets/images/SignUp Button/Arrow 1.png';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import Button from '../components/button/button';
@@ -43,23 +39,23 @@ const HomeBanner = () => {
         <Swiper navigation={true} modules={[Navigation]} className=" mySwiper1 mySwiper">
           <SwiperSlide>
             <div className="relative">
-              <img className="relative" src={banner2} alt="" />
+              <img className="relative" src="/banner2.png" alt="" />
               <Button to="/Abount" bgColor="banner" className="bottom-[200px] ml-[96px]">
                 <div className="flex">
-                  Khám phá ngay <img src={iconRight} alt="" className="object-contain ml-2" />
+                  Khám phá ngay <img src="/iconRight.png" alt="" className="object-contain ml-2" />
                 </div>
               </Button>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="relative">
-              <img src={banner3} alt="" />
+              <img src="/banner3.png" alt="" />
               <NavLink
                 className="absolute bottom-[200px] w-[199px] bg-white rounded-lg h-[54px] flex items-center justify-center text-primary text-heading5 ml-[96px] font-bold"
                 to="/"
               >
                 Khám phá ngay
-                <img src={iconRight} alt="" className="object-contain ml-2" />
+                <img src="iconRight.png" alt="" className="object-contain ml-2" />
               </NavLink>
             </div>
           </SwiperSlide>
@@ -67,14 +63,14 @@ const HomeBanner = () => {
       </div>
 
       <div className="relative min-[739px]:hidden">
-        <img className="relative" src={mobi_homebanner1} alt="" />
+        <img className="relative" src="/Mobi_homebanner1.png" alt="" />
         <Button
           to="/Abount"
           bgColor="banner"
           className="bottom-[200px] ml-[96px] max-[740px]:top-[30%]  max-[740px]:ml-[50%] max-[740px]:translate-x-[-50%]  "
         >
           <div className="flex">
-            Khám phá ngay <img src={iconRight} alt="" className="object-contain ml-2" />
+            Khám phá ngay <img src="iconRight.png" alt="" className="object-contain ml-2" />
           </div>
         </Button>
       </div>

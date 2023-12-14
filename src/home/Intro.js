@@ -435,7 +435,7 @@ const Intro = () => {
     <Fragment>
       <div className="py-16 max-[740px]:pt-9 max-[740px]:pb-[56px] mx-24 max-[740px]:mx-0">
         <div className="flex justify-center w-full ">
-          <h2 className=" mb-14 w-[600px]  leading-[52px] text-center font-bold  font-fontMontserrat text-text text-heading1 z-10 max-[740px]:w-full max-[740px]:leading-7 max-[740px]:text-heading3 max-[740px]:mb-7 max-[740px]:mx-[73px]">
+          <h2 className=" mb-14 w-[600px]  leading-[52px] text-center font-bold  font-Montserrat text-text text-heading1 z-10 max-[740px]:w-full max-[740px]:leading-7 max-[740px]:text-heading3 max-[740px]:mb-7 max-[740px]:mx-[73px]">
             Vì sao bạn nên chọn Meey Finance?
           </h2>
           <img src="/backgroundIntro1.png" alt="" className="absolute flex justify-center " />
@@ -468,7 +468,7 @@ const Intro = () => {
         <div className="flex pl-4 max-[740px]:pl-0 max-[740px]:flex-col ">
           <img src="/backgroundIntro2.png" alt="" className="max-[740px]:hidden" />
           <div className="py-[123px] w-[603px] text-left max-[740px]:pt-[48px] max-[740px]:pb-0 max-[740px]:w-full max-[740px]:text-center max-[760px]:px-6">
-            <h3 className=" font-bold font-fontMontserrat leading-[58px] text-darkblue text-heading1 max-[740px]:text-heading3 max-[740px]:leading-7  ">
+            <h3 className=" font-bold font-Montserrat leading-[58px] text-darkblue text-heading1 max-[740px]:text-heading3 max-[740px]:leading-7  ">
               Thẩm định bất động sản toàn diện
             </h3>
             <div className="my-6 font-normal leading-7 text-black text-heading3 opacity-80 max-[740px]:leading-5 max-[740px]:text-heading5 max-[740px]:text-left ">
@@ -499,7 +499,7 @@ const Intro = () => {
       <div className="pt-[142px] max-[740px]:pt-16">
         <div className="flex justify-center max-[740px]:px-6 max-[740px]:mb-[70px] max-[740px]:block">
           <div className=" pb-[60px] w-[578px] max-[740px]:w-full">
-            <h3 className="mb-6  text-left  font-bold font-fontMontserrat leading-[58px] text-darkblue text-heading1 max-[740px]:leading-7 max-[740px]:text-heading3 max-[740px]:text-center ">
+            <h3 className="mb-6  text-left  font-bold font-Montserrat leading-[58px] text-darkblue text-heading1 max-[740px]:leading-7 max-[740px]:text-heading3 max-[740px]:text-center ">
               Tư vấn & khuyến nghị giao dịch bất động sản
             </h3>
             <div className="font-normal leading-7 text-left mb-[60px] text-black text-heading3 opacity-80 max-[740px]:leading-5 max-[740px]:text-Base max-[740px]:mb-9 ">
@@ -522,7 +522,7 @@ const Intro = () => {
         <div className="flex mx-auto max-[740px]:mx-6 max-[740px]:block ">
           <img src="/backgroundIntro4.png" alt="" className="relative pt-[51px] max-[740px]:hidden " />
           <div className="pt-[148px] pl-5 pb-[189px] text-left  w-[603px] max-[740px]:pt-12 max-[740px]:pl-0 max-[740px]:pb-0  max-[740px]:w-full ">
-            <h3 className="mb-6 font-bold font-fontMontserrat leading-[58px] text-text text-heading1 max-[740px]:text-heading3 max-[740px]:leading-7 max-[740px]:text-center">
+            <h3 className="mb-6 font-bold font-Montserrat leading-[58px] text-text text-heading1 max-[740px]:text-heading3 max-[740px]:leading-7 max-[740px]:text-center">
               Đầu tư tài chính bất động sản
             </h3>
             <div className="font-normal w-[578px] mb-[60px] leading-7 text-black text-heading3 opacity-80 max-[740px]:text-heading5 max-[740px]:mb-5 max-[740px]:w-full max-[740px]:text-left">
@@ -542,7 +542,7 @@ const Intro = () => {
       <div className="pt-[140px] max-[739px]:pt-0 ">
         <div className="flex justify-center max-[739px]:block">
           <div className="pt-[84px] text-left mr-[67px] pb-[114px] w-[565px] max-[739px]:w-full max-[739px]:px-6 max-[739px]:pt-16 max-[739px]:pb-0">
-            <h3 className="font-bold font-fontMontserrat leading-[58px] text-text text-heading1  max-[739px]:text-heading3 max-[739px]:leading-7 max-[739px]:text-center">
+            <h3 className="font-bold font-Montserrat leading-[58px] text-text text-heading1  max-[739px]:text-heading3 max-[739px]:leading-7 max-[739px]:text-center">
               Kết nối giao dịch
             </h3>
             <div className="mt-10 mb-[60px] font-normal leading-7 text-black text-heading3 opacity-80 max-[739px]:text-base max-[739px]:w-full max-[739px]:my-6 ">
@@ -571,11 +571,11 @@ const Intro = () => {
       <div className="relative flex justify-center text-center max-[739px]:mx-6 max-[740px]:mb-6 ">
         <img src="/client.png" alt="" className="rounded-lg max-[739px]:hidden" />
         <img src="/mobi_client.png" alt="" className="rounded-lg min-[740px]:hidden" />
-        <div className="absolute min-[739px]:left-[149px] ">
-          <h3 className=" mt-[71px] font-fontMontserrat font-bold text-heading1 leading-[58px] text-white max-[739px]:text-heading3 max-[739px]:leading-6">
+        <div className="absolute max-[739px]:text-center text-left min-[739px]:left-[149px] ">
+          <h3 className=" mt-[71px] font-Montserrat font-bold text-heading1 leading-[58px] text-white max-[739px]:text-heading3 max-[739px]:leading-6">
             Khách hàng & Đối tác
           </h3>
-          <div className="flex text-white ">
+          <div className="flex  text-white max-[739px]:px-6">
             <div className="flex grid-cols-3 text-left mt-7  max-[739px]:flex-col">
               <div className="col-span-1 max-[739px]:pb-8">
                 <div className="font-bold leading-9 text-heading2  max-[739px]:text-heading3 ">100.000</div>
@@ -596,9 +596,13 @@ const Intro = () => {
                 </div>
               </div>
             </div>
-            <img src="/Mobi_client1_1.png" alt="" className=" bottom-[-70%]  absolute min-[739px]:hidden " />
           </div>
-          <img src="/backgroundIntro5.png_1" alt="" className="mt-10 max-[739px]:hidden " />
+          <img
+            src="/Mobi_client1_1.png"
+            alt=""
+            className=" max-[739px]:mt-[20%] max-[739px]:px-6  min-[739px]:hidden "
+          />
+          <img src="/backgroundIntro5_1.png" alt="" className="mt-10 max-[739px]:hidden " />
         </div>
       </div>
       <div className="max-[740px]:hidden">

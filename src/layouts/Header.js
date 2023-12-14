@@ -54,11 +54,13 @@ const Header = () => {
       </div>
 
       <div className="z-10 min-[739px]:hidden max-w-screen-desktop">
-        <img
-          src="Header_logo_mobi.png"
-          alt=""
-          className="flex mx-auto absolute left-[50%] translate-x-[-50%] mt-3 w-[111px] h-[47px] "
-        />
+        <NavLink to="/">
+          <img
+            src="Header_logo_mobi.png"
+            alt=""
+            className="flex mx-auto absolute left-[50%] translate-x-[-50%] mt-3 w-[111px] h-[47px] "
+          />
+        </NavLink>
         <img
           src="Icon_menu.png"
           alt=""
@@ -68,7 +70,7 @@ const Header = () => {
       </div>
 
       {showModalMobile && (
-        <div className="fixed inset-0 top-auto bottom-auto z-20 w-full font-fontMontserrat bg-opacity-20 ">
+        <div className="fixed inset-0 top-auto bottom-auto z-20 w-full font-Montserrat bg-opacity-20 ">
           <div className=" h-[100vh] px-10 bg-white transition duration-700 ease-in-out">
             <div className="relative pt-16 text-center pb-9">
               <img
@@ -111,7 +113,7 @@ const Header = () => {
       )}
 
       {showModal && (
-        <div className="absolute inset-0 z-10 pt-20 font-fontRoboto bg-opacity-20 ">
+        <div className="absolute inset-0 z-10 pt-20 font-Roboto bg-opacity-20 ">
           <div className="flex items-center justify-center mx-auto text-center ">
             <div className="z-20 px-[52px] flex justify-center py-[80px] text-center rounded-xl relative bg-white">
               <img

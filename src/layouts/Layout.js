@@ -5,7 +5,7 @@ import Bottom from './Bottom';
 const Layout = ({ children }) => {
   return (
     <Fragment>
-      <div className="flex justify-center text-center">
+      <div className="flex justify-center text-center font-Roboto">
         <Header></Header>
         {children}
       </div>

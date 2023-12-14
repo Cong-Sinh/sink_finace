@@ -8,7 +8,7 @@ const AdvertiseApp = () => {
       >
         <div className="flex overflow-hidden ">
           <div className=" mt-[84px] mb-[68px] ml-[104px] text-left max-[740px]:mt-[47px] max-[740px]:mx-6">
-            <h3 className="font-fontMontserrat font-bold text-heading1 leading-[58px] text-text max-[740px]:text-heading2 max-[740px]:leading-10 text-center ">
+            <h3 className="font-Montserrat font-bold text-heading1 leading-[58px] text-text max-[740px]:text-heading2 max-[740px]:leading-10 text-center ">
               Tải App Meey Finance
             </h3>
             <div className="mt-4 font-normal leading-7 h-14 text-text max-[740px]:text-base">

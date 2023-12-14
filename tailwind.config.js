@@ -26,8 +26,8 @@ module.exports = {
         S: '12px',
       },
       fontFamily: {
-        fontRoboto: ["'Roboto', sans-serif"],
-        fontMontserrat: ["'Montserrat', sans-serif"],
+        Roboto: ["'Roboto', sans-serif"],
+        Montserrat: ["'Montserrat', sans-serif"],
       },
       screens: {
         sm: '640px',

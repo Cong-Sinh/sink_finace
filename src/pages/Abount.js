@@ -11,7 +11,7 @@ const Abount = () => {
             <img src="/Abount1.png" alt="" className="max-[739px]:hidden" />
             <img src="/Mobi_Abount1.png" alt="" className="min-[739px]:hidden" />
             <div className="absolute inset-0 flex mx-auto opacity-80 overlay bg-gradient-to-r from-secondary2 to-secondary1 ">
-              <div className="bottom-[40%] absolute w-full text-[54px] font-bold font-fontMontserrat leading-[66px] text-white  text-center max-[739px]:text-heading2 max-[739px]:leading-10  ">
+              <div className="bottom-[40%] absolute w-full text-[54px] font-bold font-Montserrat leading-[66px] text-white  text-center max-[739px]:text-heading2 max-[739px]:leading-10  ">
                 <div>Thẩm định tự động </div>
                 <div>Thu xếp tài chính thần tốc </div>
               </div>
